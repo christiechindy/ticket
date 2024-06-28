@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..500;1,300..500&display=swap');
+
+$blue: hsl(246, 80%, 60%);
+$orange: hsl(15, 100%, 70%);
+$soft-blue: hsl(195, 74%, 62%);
+$light-red: hsl(348, 100%, 68%);
+$lime-green: hsl(145, 58%, 55%);
+$violet: hsl(264, 64%, 52%);
+$soft-orange: hsl(43, 84%, 65%);
+
+$very-dark-blue: hsl(226, 43%, 10%);
+$dark-blue: hsl(235, 46%, 20%);
+$desaturated-blue: hsl(235, 45%, 61%);
+$pale-blue: hsl(236, 100%, 87%);
+
+body {
+    font-family: "Rubik";
+    color: #fff;
+    background-color: $very-dark-blue;
+}
+
+.container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto auto auto;
+    margin: 100px 120px;
+    height: 440px;
+    // background-color: #fff;
+}
+
+@mixin card {
+    box-sizing: border-box;
+    padding: 28px;
+    border-radius: 12px;
+}
+
+.person-card {
+    @include card;
+    background-color: $dark-blue;
+    position: relative;
+    height: 100%;
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.person-card .profile-card {
+    @include card;
+    background-color: $blue;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 68%;
+}
+
+.person-card .profile-card .pict img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.person-card .profile-card .text {
+    margin: 15px 0 20px;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.person-card .profile-card .name {
+    font-size: 2.4rem;
+    font-weight: 300;
+}
+
+.person-card .frequencies {
+    position: absolute;
+    z-index: 2;
+    bottom: 28px;
+    font-size: 15px;
+    color: $desaturated-blue;
+    text-transform: capitalize;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.person-card .frequencies div:hover {
+    cursor: pointer;
+}
+
+.person-card .frequencies div.active {
+    color: #fff;
+}
+
+.things-card {
+    @include card;
+    background-color: antiquewhite;
+    position: relative;
+}
+
+.things-card > img {
+    position: absolute;
+    top: 0;
+    right: 16px;
+}
+
+.things-card .info-card {
+    @include card;
+    background-color: $dark-blue;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.things-card .info-card .top {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.things-card .info-card .middle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.things-card .info-card .middle .completed {
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.things-card .info-card .middle .number {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.things-card .info-card .bottom {
+    font-size: 13px;
+    color: $desaturated-blue;
+}
+
+.things-card.job {
+    background-color: $orange;
+}
+
+.things-card.fun {
+    background-color: $soft-blue;
+}
+
+.things-card.learning {
+    background-color: $light-red;
+}
+
+.things-card.sport {
+    background-color: $lime-green;
+}
+
+.things-card.emails {
+    background-color: $violet;
+}
+
+.things-card.health {
+    background-color: $soft-orange;
+}

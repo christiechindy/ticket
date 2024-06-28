@@ -23,8 +23,9 @@ body {
     display: grid;
     gap: 20px;
     grid-template-columns: auto auto auto auto;
-    margin: 100px 120px;
+    margin: 100px auto;
     height: 440px;
+    width: 1000px;
     // background-color: #fff;
 }
 
@@ -194,6 +195,7 @@ body {
         gap: 20px;
         height: auto;
         margin: 80px 10px;
+        width: auto;
     }
 
     .person-card {

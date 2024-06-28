@@ -22,12 +22,14 @@ const ThingsCard = ({category, current, previous, frequency}: IProps) => {
                     <div className="category">{category}</div>
                     <Menu />
                 </div>
-                <div className="middle">
-                    <span className="number">{current}</span>
-                    <span className="completed">Completed</span>
-                </div>
-                <div className="bottom">
-                    {textPrevious}: {previous} Completed
+                <div className='mobile-bottom'>
+                    <div className="middle">
+                        <span className="number">{current}</span>
+                        <span className="completed">Completed</span>
+                    </div>
+                    <div className="bottom">
+                        {textPrevious}: {previous} <span>Completed</span>
+                    </div>
                 </div>
             </div>
         </div>

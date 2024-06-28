@@ -13,8 +13,10 @@ const PersonCard = ({name, freq, setFreq}: IProps) => {
                 <div className="pict">
                     <img src="/avatar.png" alt={name} />
                 </div>
-                <div className="text">Report for</div>
-                <div className="name">{name}</div>
+                <div>
+                    <div className="text">Report for</div>
+                    <div className="name">{name}</div>
+                </div>
             </div>
             <div className="frequencies">
                 {frequencies.map((d) => (

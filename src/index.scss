@@ -86,6 +86,7 @@ body {
 
 .person-card .frequencies div:hover {
     cursor: pointer;
+    color: $pale-blue;
 }
 
 .person-card .frequencies div.active {
@@ -116,6 +117,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    transition: 0.3s ease-in-out;
+}
+
+.things-card > .info-card:hover {
+    background-color: #33397F;
+    cursor: pointer;
 }
 
 .things-card .info-card .top {

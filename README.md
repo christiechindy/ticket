@@ -19,7 +19,7 @@ You will also see any lint errors in the console.
 
 # The most difficult part of the challenge
 - is that the designs are in PNG, I should just try my best to guess the measure.
-- I'm a bit confused as to how the design should be for tablet size or the size between 375px and 1440px. So, i don't do anything on that.
+- I'm a bit confused as to how the design should be for tablet size or the size between 375px and 1440px. Currently, i don't do anything on that. If you would like to give design/instruction on that, I'd edit it.
 
 # The easiest part of the challenge
 I think when the component has display flex. Since I love flex and am very familiar on it. So, i found it so easy.
